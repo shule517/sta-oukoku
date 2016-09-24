@@ -4,9 +4,6 @@ import Udon from './udon';
 window.onload = () => {
     let stage = new createjs.Stage("canvasElement");
 
-    let background = new createjs.Bitmap('./img/map.png');
-    this.addChild(this.bitmap);
-
     let udon = new Udon();
     stage.addChild(udon);
 

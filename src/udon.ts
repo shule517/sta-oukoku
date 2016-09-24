@@ -1,4 +1,3 @@
-/// <reference path="../typings/index.d.ts" />
 export default class Udon extends createjs.Container {
     private bitmap: createjs.Bitmap;
     constructor() {

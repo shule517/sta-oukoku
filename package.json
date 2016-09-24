@@ -8,13 +8,14 @@
     "typings": "typings install",
     "build": "tsc src/index.ts --outDir dist --sourceMap --noImplicitAny --watch",
     "webpack": "webpack --entry ./dist/index.js --output-filename ./dist/app.js -d --watch",
-    "release": "webpack --entry ./dist/index.js --output-filename ./dist/app.js -p",
+    "release": "tsc src/index.ts --outDir dist --sourceMap --noImplicitAny && webpack --entry ./dist/index.js --output-filename ./dist/app.js -p",
     "test": "tsc src/test/test.ts --outDir dist --sourceMap && cd ./dist/test && mocha",
     "static": "static ./dist"
   },
   "author": "shule517",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.14.0",
     "mocha": "^3.0.2",
     "node-static": "^0.7.8",
     "power-assert": "^1.4.1",
