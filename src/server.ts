@@ -5,7 +5,7 @@ let fs = require('fs');
 
 let server = http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type' : 'text/html'});
-    res.end(fs.readFileSync('./dist/chat.html', 'utf-8'));
+    res.end(fs.readFileSync('/app/dist/chat.html', 'utf-8'));
 }).listen(3000);
 
 let io = socketio.listen(server);
