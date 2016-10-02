@@ -11,8 +11,11 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
 </head>
 <body>
+    <canvas id="canvasElement" width="800" height="500"></canvas>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -29,7 +32,7 @@
             </div>
         </div>
     </div>
-
+<!--
     <script type="text/javascript">
     var ioSocket = io.connect( "http://sample.peerst.jp:80" ); // チャットサーバーに接続
 
@@ -66,6 +69,6 @@
         // クライアントからサーバーへ送信
         ioSocket.emit( "c2s_broadcast", { value : message } );
     });
-    </script>
+    </script>-->
 </body>
 </html>

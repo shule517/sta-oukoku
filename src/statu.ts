@@ -1,9 +1,11 @@
 /// <reference path="../typings/index.d.ts" />
-export default class Udon extends createjs.Container {
+export default class Statu extends createjs.Container {
     private bitmap: createjs.Bitmap;
-    constructor(ioSocket: SocketIOClient.Socket) {
+    private charaId: Number;
+    constructor(ioSocket: SocketIOClient.Socket, charaId) {
         super();
-        this.bitmap = new createjs.Bitmap('./img/udon.png');
+        this.charaId = charaId;
+        this.bitmap = new createjs.Bitmap('./img/stamp6.png');
         this.addChild(this.bitmap);
         //this.x = 100;
         //this.y = 100;

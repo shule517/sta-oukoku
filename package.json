@@ -7,6 +7,7 @@
     "init": "npm install && npm run typings",
     "typings": "typings install",
     "build": "tsc src/index.ts --outDir dist --sourceMap --noImplicitAny --watch",
+    "build-server": "tsc src/server.ts --outDir dist --sourceMap --noImplicitAny --watch",
     "webpack": "webpack --entry ./dist/index.js --output-filename ./dist/app.js -d --watch",
     "release": "tsc src/index.ts --outDir dist --sourceMap --noImplicitAny && webpack --entry ./dist/index.js --output-filename ./dist/app.js -p && tsc src/server.ts --outDir dist --sourceMap",
     "test": "tsc src/test/test.ts --outDir dist --sourceMap && cd ./dist/test && mocha",

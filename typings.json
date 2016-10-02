@@ -6,6 +6,7 @@
     "createjs-lib": "registry:dt/createjs-lib#0.0.0+20160317120654",
     "easeljs": "registry:dt/easeljs#0.8.0+20160919062420",
     "empower": "registry:dt/empower#0.0.0+20160317120654",
+    "express": "registry:dt/express#4.0.0+20160708185218",
     "mocha": "registry:dt/mocha#2.2.5+20160720003353",
     "node": "registry:dt/node#6.0.0+20160928143418",
     "power-assert": "registry:dt/power-assert#0.0.0+20160316155526",
